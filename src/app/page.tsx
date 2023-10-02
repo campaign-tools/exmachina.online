@@ -67,8 +67,8 @@ export default function Home() {
         <DialogTitle id="alert-dialog-title">{"Are you a GM that loves tabletop gaming?"}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Then check out <Link href={"https://campaign.tools"}>Campaign Tools</Link> for an AI powered suite of
-            awesome that
+            {/*Then check out <Link href={"https://campaign.tools"}>Campaign Tools</Link> for an AI powered suite of*/}
+            {"We're"} working on a set of Campaign Tools that use AI awesomeness that
             <Typography component={"span"} fontStyle={"italic"}>
               &nbsp;can&nbsp;
             </Typography>
