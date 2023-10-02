@@ -9,10 +9,8 @@ import {
   Box,
   Button,
   Card,
-  CardActionArea,
   CardActions,
   CardContent,
-  CardHeader,
   CardMedia,
   Container,
   Dialog,
@@ -36,18 +34,18 @@ export default function Home() {
         <Card elevation={10}>
           <CardMedia component="img" height="275" image="/lego.avif" alt="green iguana" sx={{ minWidth: "500px" }} />
           <CardContent>
-            <Typography gutterBottom variant={"h6"}>
-              EXMACHINA Meditations
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              <p>
+            <Stack spacing={1}>
+              <Typography gutterBottom variant={"h6"}>
+                EXMACHINA Meditations
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
                 I am a servant of the Secret Fire, wielder of the Flame of Anor. Dark fire will not avail you, flame of
                 Udun.
-              </p>
+              </Typography>
               <Typography variant="caption" color="text.primary">
                 YOU SHALL NOT PASS!
               </Typography>
-            </Typography>
+            </Stack>
           </CardContent>
           <CardActions sx={{ justifyContent: "flex-end" }}>
             <Button size="small" color="primary" onClick={() => setOpen(true)}>
