@@ -21,6 +21,7 @@ import {
   DialogContentText,
   DialogTitle,
   Link,
+  Stack,
   Typography,
 } from "@mui/material";
 
@@ -36,16 +37,25 @@ export default function Home() {
           <CardMedia component="img" height="275" image="/lego.avif" alt="green iguana" sx={{ minWidth: "500px" }} />
           <CardContent>
             <Typography gutterBottom variant={"h6"}>
-              EXMACHINA Online
+              EXMACHINA Meditations
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              What wonders await?
+              <p>
+                I am a servant of the Secret Fire, wielder of the Flame of Anor. Dark fire will not avail you, flame of
+                Udun.
+              </p>
+              <Typography variant="caption" color="text.primary">
+                YOU SHALL NOT PASS!
+              </Typography>
             </Typography>
           </CardContent>
-
           <CardActions sx={{ justifyContent: "flex-end" }}>
             <Button size="small" color="primary" onClick={() => setOpen(true)}>
-              Learn More
+              Something
+              <Typography variant={"inherit"} color={"secondary"}>
+                &nbsp;cool&nbsp;
+              </Typography>
+              this way comes
             </Button>
           </CardActions>
         </Card>
@@ -60,9 +70,13 @@ export default function Home() {
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             Then check out <Link href={"https://campaign.tools"}>Campaign Tools</Link> for an AI powered suite of
-            awesome that{" "}
+            awesome that
             <Typography component={"span"} fontStyle={"italic"}>
-              will
+              &nbsp;can&nbsp;
+            </Typography>
+            and
+            <Typography component={"span"} fontStyle={"italic"}>
+              &nbsp;will&nbsp;
             </Typography>{" "}
             make you a better GM.
           </DialogContentText>
