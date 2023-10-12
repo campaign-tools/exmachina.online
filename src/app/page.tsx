@@ -33,11 +33,15 @@ export default function Home() {
       <Box display="flex" justifyContent="center" alignItems="center" minHeight="100vh">
         <Card elevation={10}>
           <CardMedia component="img" height="275" image="/lego.avif" alt="green iguana" sx={{ minWidth: "500px" }} />
+          <Box
+            draggable
+            component="img"
+            src={"/exmachina_logo.svg"}
+            alt={"exmachina"}
+            sx={{ mt: 3, pl: 2, height: 40 }}
+          />
           <CardContent>
             <Stack spacing={1}>
-              <Typography gutterBottom variant={"h6"}>
-                EXMACHINA Meditations
-              </Typography>
               <Typography variant="body2" color="text.secondary">
                 I am a servant of the Secret Fire, wielder of the Flame of Anor. Dark fire will not avail you, flame of
                 Udun.
@@ -68,7 +72,11 @@ export default function Home() {
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
             {/*Then check out <Link href={"https://campaign.tools"}>Campaign Tools</Link> for an AI powered suite of*/}
-            {"We're"} working on a set of Campaign Tools that use AI awesomeness that
+            {"We're"} working on a set of{" "}
+            <a href="https://campaign.tools" target="_blank" rel="external noopener">
+              Campaign Tools
+            </a>{" "}
+            that use AI awesomeness that
             <Typography component={"span"} fontStyle={"italic"}>
               &nbsp;can&nbsp;
             </Typography>
